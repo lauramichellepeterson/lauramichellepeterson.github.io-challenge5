@@ -32,8 +32,9 @@ body {
     flex-direction: row;
     justify-content: center;
     /* white-space: pre-wrap; */
-    height: 80px;
-    border-top: 1px solid white;;
+    height: 40px;
+    border: 1px solid gray;
+    /* border-top: 1px solid white; */
   }
   
   .hour {
