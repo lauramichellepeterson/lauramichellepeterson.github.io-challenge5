@@ -18,24 +18,122 @@
         href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
         rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Work Day Scheduler</title>
     </head>
 
-  <body>
-    <header class="jumbotron">
-        <h1 class="display-3">Work Day Scheduler</h1>
-        <p class="lead">A simple calendar app for scheduling your work day</p>
-        <p id="currentDay" class="lead">
-            <script> document.write(new Date().toDateString()); </script>
-        </p>
-    </header>
-    <div class="container">
-        <!-- Timeblocks go here -->
-        
-    </div>
-
+    <body>
+        <header class="jumbotron">
+            <h1 class="display-3">Work Day Scheduler</h1>
+            <p class="lead">A simple calendar app for scheduling your work day</p>
+            <p id="currentDay" class="lead">
+                <script> document.write(new Date().toDateString()); </script>
+            </p>
+        </header>
+        <div class="container" id="main">
+            <!-- Timeblocks go here -->
+            <div class="row" id="9am">
+                <div class="time" id="time">
+                    <h3>9:00</h3>
+                </div>
+                <div id="task_div">
+                    <input type="text" class="form-control" size="80" placeholder="Task" aria-label="Task" aria-describedby="basic-addon1" id="task_9">
+                </div>
+                <div id="btn_div">
+                    <button type="button" class="btn btn-primary" id="9" >Save</button>
+                </div>
+            </div>
+            <div class="row" id="10am">
+                <div class="time" id="time">
+                    <h3>10:00</h3>
+                </div>
+                <div>
+                    <input type="text" class="form-control" size="80" placeholder="Task" aria-label="Task" aria-describedby="basic-addon1" id="task_10">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary" id="10" >Save</button>
+                </div>
+            </div>
+            <div class="row" id="11am">
+                <div class="time" id="time">
+                    <h3>11:00</h3>
+                </div>
+                <div>
+                    <input type="text" class="form-control" size="80" placeholder="Task" aria-label="Task" aria-describedby="basic-addon1" id="task_11">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary" id="11" >Save</button>
+                </div>
+            </div>
+            <div class="row" id="12pm">
+                <div class="time" id="time">
+                    <h3>12:00</h3>
+                </div>
+                <div>
+                    <input type="text" class="form-control" size="80" placeholder="Task" aria-label="Task" aria-describedby="basic-addon1" id="task_12">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary" id="12" >Save</button>
+                </div>
+            </div>
+            <div class="row" id="1pm">
+                <div class="time" id="time">
+                    <h3>1:00</h3>
+                </div>
+                <div>
+                    <input type="text" class="form-control" size="80" placeholder="Task" aria-label="Task" aria-describedby="basic-addon1" id="task_1">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary" id="1" >Save</button>
+                </div>
+            </div>
+            <div class="row" id="2pm">
+                <div class="time" id="time">
+                    <h3>2:00</h3>
+                </div>
+                <div>
+                    <input type="text" class="form-control" size="80" placeholder="Task" aria-label="Task" aria-describedby="basic-addon1" id="task_2">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary" id="2" >Save</button>
+                </div>
+            </div>
+            <div class="row" id="3pm">
+                <div class="time" id="time">
+                    <h3>3:00</h3>
+                </div>
+                <div>
+                    <input type="text" class="form-control" size="80" placeholder="Task" aria-label="Task" aria-describedby="basic-addon1" id="task_3">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary" id="3" >Save</button>
+                </div>
+            </div>
+            <div class="row" id="4pm">
+                <div class="time" id="time">
+                    <h3>4:00</h3>
+                </div>
+                <div>
+                    <input type="text" class="form-control" size="80" placeholder="Task" aria-label="Task" aria-describedby="basic-addon1" id="task_4">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary" id="4" >Save</button>
+                </div>
+            </div>
+            <div class="row" id="5pm">
+                <div class="time" id="time">
+                    <h3>5:00</h3>
+                </div>
+                <div>
+                    <input type="text" class="form-control" size="80" placeholder="Task" aria-label="Task" aria-describedby="basic-addon1" id="task_5">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary" id="5" >Save</button>
+                </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="./assets/js/script.js"></script>
     </body>
 </html>
